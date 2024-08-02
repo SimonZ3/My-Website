@@ -1,0 +1,33 @@
+
+  text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.title-text {
+    font-size: 4rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, purple, purple, black, red, red);
+    background-size: 600% 600%; /* Enlarges the gradient for smooth animation */
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    background-clip: text; 
+    color: transparent; 
+    animation: gradientAnimation 7s ease infinite; /* Adjust speed as needed */
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}

@@ -1,35 +1,194 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8"/>
-        <meta
-            name = "description"
-             content = "this is my website" />
-        <meta
-            name = "author"
-             content = "ben binder is not the best coder ever" />
-        <title>my webtsite</title>
-        <link rel ="stylesheet" href="styles.css"
-   
-    </head>
-<body>
-    
+<html lang="en">
 <head>
-    <body>
-       
+    <meta charset="utf-8">
+    <meta name="description" content="this is my website">
+    <meta name="author" content="ben binder is not the best coder ever">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
  
-        <center>
-        <p>The JJK fanpage</p>        
-        <h1 style = "color: red; ">Gojo vs Sukuna Fight</h1
-        <strong class = "strongSpecial"> </strong>
-        
-        <h2>A bunch of cool pictures *down below*</h2>
-        <div class = "boxSix">
-            <img src = "e.png" class = "cover"
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Background Music Control Example</title>
+        <style>
+            /* Basic Reset */
+            body, html {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                background: #121212; /* Dark background for a futuristic feel */
+                color: #e0e0e0; /* Light text color for contrast */
+            }
+    
+            .content {
+                padding: 20px;
+                text-align: center;
+            }
+    
+            /* Hide the audio player controls */
+            audio {
+                display: none; /* Hide the default audio player */
+            }
+    
+            /* Futuristic Button Styles */
+            .music-controls {
+                text-align: center;
+                margin-top: 20px;
+            }
+    
+            .music-controls button {
+                background: linear-gradient(45deg, #00c6ff, #0072ff); /* Blue gradient */
+                border: none;
+                color: white;
+                padding: 15px 30px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 18px;
+                margin: 5px;
+                cursor: pointer;
+                border-radius: 50px; /* Rounded edges */
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for 3D effect */
+                transition: all 0.3s ease; /* Smooth transition */
+            }
+    
+            .music-controls button:hover {
+                background: linear-gradient(45deg, #0072ff, #00c6ff); /* Inverted gradient on hover */
+                transform: translateY(-4px); /* Lift effect */
+                box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+            }
+    
+            .music-controls button:active {
+                transform: translateY(2px); /* Pressed effect */
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow on click */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content">
+            <h1>Welcome to My Website</h1>
+            <p>Enjoy the background music while browsing!</p>
         </div>
-        </p>
-       <p>
-    </center>
+    
+        <!-- Background Music -->
+        <audio id="background-music" src="DW.mp3" loop>
+            Your browser does not support the <code>audio</code> element.
+        </audio>
+    
+        <!-- Music Control Buttons -->
+        <div class="music-controls">
+            <button id="play-button">Play Music</button>
+            <button id="pause-button" style="display: none;">Pause Music</button>
+        </div>
+    
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const audio = document.getElementById('background-music');
+                const playButton = document.getElementById('play-button');
+                const pauseButton = document.getElementById('pause-button');
+    
+                playButton.addEventListener('click', () => {
+                    audio.play();
+                    playButton.style.display = 'none';
+                    pauseButton.style.display = 'inline-block';
+                });
+    
+                pauseButton.addEventListener('click', () => {
+                    audio.pause();
+                    playButton.style.display = 'inline-block';
+                    pauseButton.style.display = 'none';
+                });
+            });
+        </script>
     </body>
-</head>
 </html>
+
+
+<style>
+        /* Optional: Style the image to fit your design */
+        .clickable-image {
+            width: 300px; /* Adjust size as needed */
+            height: auto; /* Maintain aspect ratio */
+            border: 2px solid #ddd; /* Optional: Add a border */
+            border-radius: 8px; /* Optional: Add rounded corners */
+        }
+
+        .clickable-image:hover {
+            opacity: 0.8; /* Optional: Add a hover effect */
+        }
+
+        .image-container {
+            overflow: hidden; /* Clears floats */
+        }
+
+        .image-container img {
+            float: left; /* Aligns images side by side */
+            margin-right: 10px; /* Optional: Adds space between images */
+            max-width: 100%; /* Ensures images scale responsively */
+            height: auto; /* Maintains aspect ratio */
+        }
+
+        .image-container img:last-child {
+            margin-right: 0; /* Removes margin from the last image */
+        }
+</style>
+</head>
+
+
+<body>
+    <center>
+        <p>The JJK fanpage</p>
+        <div class="RAH">
+            <div class="title-text">Gojo vs Sukuna Fight</div>
+        </div>
+        <strong class="strongSpecial"></strong>
+        <h2>A bunch of cool pictures *down below*</h2>
+        <div class="boxSix">
+            <img src="e.png" class="cover">
+        </div>
+
+        <h3><strong>Funni Pictures</strong></h3>
+
+            <img src="GG.png" alt="Image 1">
+            <br>
+            <br>
+            <img src="GC.png" alt="Image 8">
+            <br>
+            <br>
+            <img src="2-1.png" alt="Image 7">
+            <br>
+            <br>
+            <img src="cat.png" alt="Image 6">
+            <br>
+            <br>
+            <h4><strong>The Actual Pictures</strong></h4>
+            
+            <div class="image-container">
+            <img src="si.png" alt="Image 3">
+            <br>
+            <br>
+            <img src="cool.png" alt="Image 4">
+            <br>
+            <br>
+          
+            <img src="ad.png" alt="Image 5">
+        </div>
+
+        <img src="HP.png" class="cover">
+        <br>
+        <br>
+        <img src="ripbro.png" class="cover">
+
+        <h1>A link to my YouTube!</h1>
+        <a href="https://www.youtube.com/channel/UCooBvMa5tRNsFSneG15P2VA" target="_blank" rel="noopener noreferrer">
+            <img src="YT.png" alt="YouTube" class="clickable-image">
+        </a>
+    </center>
+</body>
+</html>
+
